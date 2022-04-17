@@ -1,0 +1,29 @@
+.page__section {
+  max-width: 984px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .page__section {
+    max-width: 928px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__section {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 320px) {
+  .page__section {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lead.page__section {
+    max-width: 768px;
+  }
+}

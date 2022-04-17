@@ -1,0 +1,28 @@
+.place__paragraphs {
+  margin: 0;
+  max-width: 484px;
+  width: 100%;
+  display: grid;
+  grid-row-gap: 26px;
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+@media (max-width: 1024px) {
+  .place__paragraphs {
+    max-width: 456px;
+    grid-row-gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .place__paragraphs {
+    max-width: 352px;
+  }
+}
+
+@media (max-width: 660px) {
+  .place__paragraphs {
+    margin: 0 auto;
+    max-width: 288px;
+  }
+}

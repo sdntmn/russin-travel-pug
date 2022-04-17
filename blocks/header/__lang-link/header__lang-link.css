@@ -1,0 +1,25 @@
+.header__lang-link {
+  margin: 0;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 320px) {
+  .header__lang-link {
+    line-height: 20px;
+    font-size: 18px;
+    padding-left: 15px;
+  }
+}
+
+.header__lang-link:first-of-type {
+  padding-left: 0;
+}
+
+.header__lang-link:hover {
+  opacity: 0.8;
+}

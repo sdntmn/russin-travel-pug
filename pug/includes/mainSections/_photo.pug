@@ -1,0 +1,10 @@
+include ../config.pug
+
+mixin photo(photo_list)
+  each item in photo_list
+    img.photo-grid__item(src = item.src alt = item.alt)
+
+
+section.photo-grid.page__cover
+  +photo([{"src" : path + "photo-grid-train.jpg", "alt" : "Фото. Вид из окна поезда"},{"src": path + "photo-grid-atharva-tulsi.jpg",  "alt" : "Фото. Вид на горы с воздуха"},{"src" : path + "photo-grid-tuman.jpg", "alt" : "Фото. Туман на скошенном поле"},{"src" : path + "photo-grid-sochi.jpg", "alt" : "Фото. Туман в горах"}, {"src" : path + "photo-grid-arisa.jpg", "alt" : "Фото. Автомобиль на льду"}, {"src" : path + "photo-grid-baikal.jpg", "alt" : "Фото. Песчаный пляж оз. Байкал"},{"src" : path + "photo-grid-elbrus.jpg", "alt":"Фото гора Эльбрус"},{"src":path + "photo-grid-kondratiev.jpg", "alt" : "Фото. Волногасители."},{"src":path + "photo-grid-kamchatka-1.jpg", "alt" : "Фото. Горы Камчатки в тумане."},{"src" : path + "photo-grid-kamchatka-2.jpg", "alt" : "Фото. Горы Камчатки."},{"src" : path + "photo-grid-baikal-2.jpg", "alt" : "Фото. оз. Байкал"},{"src" : path + "photo-grid-ergaki.jpg", "alt" : "Фото Вершины гор в тумане."}])
+
