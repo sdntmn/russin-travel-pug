@@ -5,9 +5,9 @@
 
 # Установка зависимостей
 
-npm install pug
-npm i gulp-pug
-npm install gulp
+- npm install pug
+- npm i gulp-pug
+- npm install gulp
 
 ### Обзор
 
