@@ -1,0 +1,13 @@
+mixin footer(link_list)
+  ul.footer__links
+    each item in link_list
+      li
+        a.footer__link(href=item.href target="_blank") #{item.text}
+      if block
+            block
+
+
+footer.footer.page__cover
+  nav
+    +footer([{"href": "https://yandex.ru/map", "text" : "Карты" }, {"href": "https://yandex.ru/pogoda", "text" : "Погода" }, {"href": "https://rasp.yandex.ru", "text" : "Расписание" },{"href": "https://calendar.yandex.ru", "text" : "Календарь" },{"href": "https://travel.yandex.ru", "text" : "Путешествия" }])
+  p.footer__copyright &#169;2022. SDN
